@@ -1,0 +1,12 @@
+{
+  ""name"": ""ts-algorithms-handbook"",
+  ""version"": ""1.0.0"",
+  ""description"": ""TypeScript implementations of foundational data structures and algorithms."",
+  ""main"": ""dist/index.js"",
+  ""scripts"": {
+    ""build"": ""tsc"",
+    ""start"": ""ts-node src/index.ts""
+  },
+  ""author"": ""Alireza Naseri"",
+  ""license"": ""MIT""
+}
