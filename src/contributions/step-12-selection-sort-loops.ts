@@ -1,13 +1,31 @@
-﻿export function selectionSortLoops(array: number[]): number[] {
-  for (let i = 0; i < array.length - 1; i++) {
-    let minIndex = i;
+﻿/**
+ * Step 12: Selection Sort Nested Loop Scan
+ *
+ * Goal:
+ * Implement the nested loops and minimum index scanning logic.
+ *
+ * In this step, we only identify the minimum item index
+ * inside the unsorted part of the array.
+ */
 
-    for (let j = i + 1; j < array.length; j++) {
-      if (array[j]! < array[minIndex]!) {
-        minIndex = j;
+export function selectionSortLoops(items: number[]): number[] {
+  const result = [...items];
+
+  for (let currentIndex = 0; currentIndex < result.length; currentIndex++) {
+    let minimumIndex = currentIndex;
+
+    for (
+      let scanIndex = currentIndex + 1;
+      scanIndex < result.length;
+      scanIndex++
+    ) {
+      if (result[scanIndex]! < result[minimumIndex]!) {
+        minimumIndex = scanIndex;
       }
     }
   }
 
-  return array;
+  return result;
 }
+
+console.log(selectionSortLoops([64, 25, 12, 22, 11]));
