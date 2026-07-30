@@ -50,3 +50,9 @@
 - Time: 2026-07-29 14:30:46
 - Ref: fa6140c3-2675-4ab3-a911-1b295fc4c813
 - Note: refining repository contribution history
+
+## Steps 11-18
+
+- Added Selection Sort skeleton, loop scan, complete implementation, and complexity analysis.
+- Added Insertion Sort skeleton, shifting mechanics, complete implementation, and complexity analysis.
+- Practiced TypeScript strict mode with noUncheckedIndexedAccess and non-null assertions.
