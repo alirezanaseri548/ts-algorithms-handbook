@@ -1,1 +1,1 @@
-export { twoSumHasPair } from "../algorithms/two-sum";
+export { twoSumHasPair } from "../algorithms/two-sum.js";

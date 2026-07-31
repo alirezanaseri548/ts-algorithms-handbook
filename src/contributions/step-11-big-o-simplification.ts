@@ -1,4 +1,4 @@
 export {
   bigOSimplificationExamples,
   printBigOSimplificationExamples,
-} from "../examples/big-o-simplification";
+} from "../examples/big-o-simplification.js";

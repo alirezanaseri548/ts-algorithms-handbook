@@ -1,1 +1,1 @@
-export { averageOfEvenNumbers } from "../algorithms/average-of-even-numbers";
+export { averageOfEvenNumbers } from "../algorithms/average-of-even-numbers.js";

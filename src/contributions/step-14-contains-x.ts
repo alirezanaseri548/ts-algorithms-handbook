@@ -1,1 +1,1 @@
-export { containsX } from "../algorithms/contains-x";
+export { containsX } from "../algorithms/contains-x.js";
