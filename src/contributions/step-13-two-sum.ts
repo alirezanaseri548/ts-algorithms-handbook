@@ -1,0 +1,1 @@
+export { twoSumHasPair } from "../algorithms/two-sum";
