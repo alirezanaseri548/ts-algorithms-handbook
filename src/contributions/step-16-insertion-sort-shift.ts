@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Step 16: Insertion Sort Shifting Mechanics
  *
  * Goal:

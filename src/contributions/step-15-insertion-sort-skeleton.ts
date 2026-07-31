@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Step 15: Insertion Sort Skeleton
  *
  * Goal:

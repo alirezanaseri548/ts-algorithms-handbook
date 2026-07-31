@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Step 13: Complete Selection Sort
  *
  * Goal:

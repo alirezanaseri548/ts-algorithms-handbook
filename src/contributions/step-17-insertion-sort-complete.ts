@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Step 17: Complete Insertion Sort
  *
  * Goal:

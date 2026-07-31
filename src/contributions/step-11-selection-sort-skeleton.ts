@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Step 11: Selection Sort Skeleton
  *
  * Goal:

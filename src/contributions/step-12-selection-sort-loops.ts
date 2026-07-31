@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Step 12: Selection Sort Nested Loop Scan
  *
  * Goal:

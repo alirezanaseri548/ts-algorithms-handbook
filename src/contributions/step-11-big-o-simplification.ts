@@ -1,4 +1,1 @@
-export {
-  bigOSimplificationExamples,
-  printBigOSimplificationExamples,
-} from "../examples/big-o-simplification.js";
+﻿export const bigOSimplification = 'Focus on the dominant term. O(N + 2) becomes O(N).';
