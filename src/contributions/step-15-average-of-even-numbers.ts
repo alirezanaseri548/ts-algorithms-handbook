@@ -1,0 +1,1 @@
+export { averageOfEvenNumbers } from "../algorithms/average-of-even-numbers";
