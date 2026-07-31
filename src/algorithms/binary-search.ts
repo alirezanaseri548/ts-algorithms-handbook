@@ -4,7 +4,7 @@ export function binarySearch(items: number[], target: number): number {
 
   while (left <= right) {
     const middle = Math.floor((left + right) / 2);
-    const value = items[middle];
+    const value = items[middle]!;
 
     if (value === target) {
       return middle;

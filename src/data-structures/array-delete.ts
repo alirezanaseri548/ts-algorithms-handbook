@@ -6,9 +6,10 @@ export function deleteAt<T>(items: T[], index: number): T[] {
   const result = [...items];
 
   for (let current = index; current < result.length - 1; current++) {
-    result[current] = result[current + 1];
+    result[current] = result[current + 1]!;
   }
 
   result.length = result.length - 1;
+
   return result;
 }

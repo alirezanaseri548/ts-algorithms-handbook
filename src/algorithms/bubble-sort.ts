@@ -1,16 +1,19 @@
 export function bubbleSort(items: number[]): number[] {
   const result = [...items];
-  let unsortedUntilIndex = result.length - 1;
-  let sorted = false;
 
-  while (!sorted) {
+  let sorted = false;
+  let unsortedUntilIndex = result.length - 1;
+
+  while (!sorted && unsortedUntilIndex > 0) {
     sorted = true;
 
     for (let index = 0; index < unsortedUntilIndex; index++) {
-      if (result[index] > result[index + 1]) {
-        const temp = result[index];
-        result[index] = result[index + 1];
-        result[index + 1] = temp;
+      const current = result[index]!;
+      const next = result[index + 1]!;
+
+      if (current > next) {
+        result[index] = next;
+        result[index + 1] = current;
         sorted = false;
       }
     }
