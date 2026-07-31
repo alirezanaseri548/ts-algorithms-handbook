@@ -1,4 +1,4 @@
-# TypeScript Algorithms Handbook
+# ts-algorithms-handbook
 
 A clean and practical TypeScript repository for learning foundational data structures, algorithms, and Big O analysis.
 
@@ -19,46 +19,46 @@ This project is designed as a step-by-step handbook where each contribution focu
 ## Project Structure
 ```bash
 src/
-├── algorithms/
-│   ├── binary-search.ts
-│   ├── bubble-sort.ts
-│   └── linear-search.ts
-│
-├── data-structures/
-│   ├── array-delete.ts
-│   ├── array-insert.ts
-│   ├── array-read.ts
-│   ├── array-set.ts
-│   └── ordered-array.ts
-│
-├── contributions/
-│   ├── daily-progress-log.md
-│   ├── github-calendar-sync.md
-│   ├── step-01-array-read.ts
-│   ├── step-02-linear-search.ts
-│   ├── step-03-array-insert.ts
-│   ├── step-04-array-delete.ts
-│   ├── step-05-array-set.ts
-│   ├── step-06-ordered-array.ts
-│   ├── step-07-binary-search.ts
-│   ├── step-08-big-o-notes.ts
-│   ├── step-09-bubble-sort.ts
-│   ├── step-10-summary.md
-│   ├── step-11-selection-sort-skeleton.ts
-│   ├── step-12-selection-sort-loops.ts
-│   ├── step-13-selection-sort-complete.ts
-│   ├── step-14-selection-sort-complexity.md
-│   ├── step-15-insertion-sort-skeleton.ts
-│   ├── step-16-insertion-sort-shift.ts
-│   ├── step-17-insertion-sort-complete.ts
-│   ├── step-18-insertion-sort-complexity.md
-│   ├── step-19-benchmark.ts
-│   └── step-20-summary.md
-│
-├── examples/
-│   └── big-o-examples.ts
-│
-└── index.ts
+â”œâ”€â”€ algorithms/
+â”‚   â”œâ”€â”€ binary-search.ts
+â”‚   â”œâ”€â”€ bubble-sort.ts
+â”‚   â””â”€â”€ linear-search.ts
+â”‚
+â”œâ”€â”€ data-structures/
+â”‚   â”œâ”€â”€ array-delete.ts
+â”‚   â”œâ”€â”€ array-insert.ts
+â”‚   â”œâ”€â”€ array-read.ts
+â”‚   â”œâ”€â”€ array-set.ts
+â”‚   â””â”€â”€ ordered-array.ts
+â”‚
+â”œâ”€â”€ contributions/
+â”‚   â”œâ”€â”€ daily-progress-log.md
+â”‚   â”œâ”€â”€ github-calendar-sync.md
+â”‚   â”œâ”€â”€ step-01-array-read.ts
+â”‚   â”œâ”€â”€ step-02-linear-search.ts
+â”‚   â”œâ”€â”€ step-03-array-insert.ts
+â”‚   â”œâ”€â”€ step-04-array-delete.ts
+â”‚   â”œâ”€â”€ step-05-array-set.ts
+â”‚   â”œâ”€â”€ step-06-ordered-array.ts
+â”‚   â”œâ”€â”€ step-07-binary-search.ts
+â”‚   â”œâ”€â”€ step-08-big-o-notes.ts
+â”‚   â”œâ”€â”€ step-09-bubble-sort.ts
+â”‚   â”œâ”€â”€ step-10-summary.md
+â”‚   â”œâ”€â”€ step-11-selection-sort-skeleton.ts
+â”‚   â”œâ”€â”€ step-12-selection-sort-loops.ts
+â”‚   â”œâ”€â”€ step-13-selection-sort-complete.ts
+â”‚   â”œâ”€â”€ step-14-selection-sort-complexity.md
+â”‚   â”œâ”€â”€ step-15-insertion-sort-skeleton.ts
+â”‚   â”œâ”€â”€ step-16-insertion-sort-shift.ts
+â”‚   â”œâ”€â”€ step-17-insertion-sort-complete.ts
+â”‚   â”œâ”€â”€ step-18-insertion-sort-complexity.md
+â”‚   â”œâ”€â”€ step-19-benchmark.ts
+â”‚   â””â”€â”€ step-20-summary.md
+â”‚
+â”œâ”€â”€ examples/
+â”‚   â””â”€â”€ big-o-examples.ts
+â”‚
+â””â”€â”€ index.ts
 
 ---
 
@@ -228,40 +228,40 @@ This project is open for learning and educational use.
 
 ---
 
-# چرا این README بهتر است؟
-این نسخه چند مشکل مهم README فعلی را حل می‌کند:
+# Ú†Ø±Ø§ Ø§ÛŒÙ† README Ø¨Ù‡ØªØ± Ø§Ø³ØªØŸ
+Ø§ÛŒÙ† Ù†Ø³Ø®Ù‡ Ú†Ù†Ø¯ Ù…Ø´Ú©Ù„ Ù…Ù‡Ù… README ÙØ¹Ù„ÛŒ Ø±Ø§ Ø­Ù„ Ù…ÛŒâ€ŒÚ©Ù†Ø¯:
 
-## 1) فقط معرفی نیست، **آموزش اجرا** هم دارد
-همان چیزی که خودت خواستی:
-- چطور clone کنند
-- کجا `npm install` بزنند
-- کجا `npx ts-node` بزنند
-- داخل VS Code چطور اجرا کنند
+## 1) ÙÙ‚Ø· Ù…Ø¹Ø±ÙÛŒ Ù†ÛŒØ³ØªØŒ **Ø¢Ù…ÙˆØ²Ø´ Ø§Ø¬Ø±Ø§** Ù‡Ù… Ø¯Ø§Ø±Ø¯
+Ù‡Ù…Ø§Ù† Ú†ÛŒØ²ÛŒ Ú©Ù‡ Ø®ÙˆØ¯Øª Ø®ÙˆØ§Ø³ØªÛŒ:
+- Ú†Ø·ÙˆØ± clone Ú©Ù†Ù†Ø¯
+- Ú©Ø¬Ø§ `npm install` Ø¨Ø²Ù†Ù†Ø¯
+- Ú©Ø¬Ø§ `npx ts-node` Ø¨Ø²Ù†Ù†Ø¯
+- Ø¯Ø§Ø®Ù„ VS Code Ú†Ø·ÙˆØ± Ø§Ø¬Ø±Ø§ Ú©Ù†Ù†Ø¯
 
-## 2) ساختار پروژه را روشن می‌کند
-هر کسی وارد ریپو شود سریع می‌فهمد:
-- الگوریتم‌ها کجاست
-- دیتا استراکچرها کجاست
-- فایل‌های contribution کجاست
+## 2) Ø³Ø§Ø®ØªØ§Ø± Ù¾Ø±ÙˆÚ˜Ù‡ Ø±Ø§ Ø±ÙˆØ´Ù† Ù…ÛŒâ€ŒÚ©Ù†Ø¯
+Ù‡Ø± Ú©Ø³ÛŒ ÙˆØ§Ø±Ø¯ Ø±ÛŒÙ¾Ùˆ Ø´ÙˆØ¯ Ø³Ø±ÛŒØ¹ Ù…ÛŒâ€ŒÙÙ‡Ù…Ø¯:
+- Ø§Ù„Ú¯ÙˆØ±ÛŒØªÙ…â€ŒÙ‡Ø§ Ú©Ø¬Ø§Ø³Øª
+- Ø¯ÛŒØªØ§ Ø§Ø³ØªØ±Ø§Ú©Ú†Ø±Ù‡Ø§ Ú©Ø¬Ø§Ø³Øª
+- ÙØ§ÛŒÙ„â€ŒÙ‡Ø§ÛŒ contribution Ú©Ø¬Ø§Ø³Øª
 
-## 3) حرفه‌ای‌تر دیده می‌شود
-برای GitHub خیلی مهم است که README فقط یک جمله نباشد.  
-این نسخه باعث می‌شود ریپوی تو:
-- تمیزتر
-- جدی‌تر
-- قابل‌فهم‌تر
-- portfolio-friendly تر
-
----
-
-# یک نکته مهم
-چون تو الان Step 11 تا 20 را هم اضافه کرده‌ای، README باید با وضعیت جدید ریپو **sync** باشد.  
-یعنی اگر این فایل‌ها واقعاً داخل ریپو هستند، آوردنشان در README کاملاً درست است.
+## 3) Ø­Ø±ÙÙ‡â€ŒØ§ÛŒâ€ŒØªØ± Ø¯ÛŒØ¯Ù‡ Ù…ÛŒâ€ŒØ´ÙˆØ¯
+Ø¨Ø±Ø§ÛŒ GitHub Ø®ÛŒÙ„ÛŒ Ù…Ù‡Ù… Ø§Ø³Øª Ú©Ù‡ README ÙÙ‚Ø· ÛŒÚ© Ø¬Ù…Ù„Ù‡ Ù†Ø¨Ø§Ø´Ø¯.  
+Ø§ÛŒÙ† Ù†Ø³Ø®Ù‡ Ø¨Ø§Ø¹Ø« Ù…ÛŒâ€ŒØ´ÙˆØ¯ Ø±ÛŒÙ¾ÙˆÛŒ ØªÙˆ:
+- ØªÙ…ÛŒØ²ØªØ±
+- Ø¬Ø¯ÛŒâ€ŒØªØ±
+- Ù‚Ø§Ø¨Ù„â€ŒÙÙ‡Ù…â€ŒØªØ±
+- portfolio-friendly ØªØ±
 
 ---
 
-# پیشنهاد حرفه‌ای‌تر از این هم دارم
-اگر بخواهی، من می‌توانم در پیام بعدی یک **README حتی بهتر و سطح Portfolio / Open Source** برایت بنویسم که این بخش‌ها را هم داشته باشد:
+# ÛŒÚ© Ù†Ú©ØªÙ‡ Ù…Ù‡Ù…
+Ú†ÙˆÙ† ØªÙˆ Ø§Ù„Ø§Ù† Step 11 ØªØ§ 20 Ø±Ø§ Ù‡Ù… Ø§Ø¶Ø§ÙÙ‡ Ú©Ø±Ø¯Ù‡â€ŒØ§ÛŒØŒ README Ø¨Ø§ÛŒØ¯ Ø¨Ø§ ÙˆØ¶Ø¹ÛŒØª Ø¬Ø¯ÛŒØ¯ Ø±ÛŒÙ¾Ùˆ **sync** Ø¨Ø§Ø´Ø¯.  
+ÛŒØ¹Ù†ÛŒ Ø§Ú¯Ø± Ø§ÛŒÙ† ÙØ§ÛŒÙ„â€ŒÙ‡Ø§ ÙˆØ§Ù‚Ø¹Ø§Ù‹ Ø¯Ø§Ø®Ù„ Ø±ÛŒÙ¾Ùˆ Ù‡Ø³ØªÙ†Ø¯ØŒ Ø¢ÙˆØ±Ø¯Ù†Ø´Ø§Ù† Ø¯Ø± README Ú©Ø§Ù…Ù„Ø§Ù‹ Ø¯Ø±Ø³Øª Ø§Ø³Øª.
+
+---
+
+# Ù¾ÛŒØ´Ù†Ù‡Ø§Ø¯ Ø­Ø±ÙÙ‡â€ŒØ§ÛŒâ€ŒØªØ± Ø§Ø² Ø§ÛŒÙ† Ù‡Ù… Ø¯Ø§Ø±Ù…
+Ø§Ú¯Ø± Ø¨Ø®ÙˆØ§Ù‡ÛŒØŒ Ù…Ù† Ù…ÛŒâ€ŒØªÙˆØ§Ù†Ù… Ø¯Ø± Ù¾ÛŒØ§Ù… Ø¨Ø¹Ø¯ÛŒ ÛŒÚ© **README Ø­ØªÛŒ Ø¨Ù‡ØªØ± Ùˆ Ø³Ø·Ø­ Portfolio / Open Source** Ø¨Ø±Ø§ÛŒØª Ø¨Ù†ÙˆÛŒØ³Ù… Ú©Ù‡ Ø§ÛŒÙ† Ø¨Ø®Ø´â€ŒÙ‡Ø§ Ø±Ø§ Ù‡Ù… Ø¯Ø§Ø´ØªÙ‡ Ø¨Ø§Ø´Ø¯:
 
 - **Table of Contents**
 - **Getting Started**
@@ -272,6 +272,30 @@ This project is open for learning and educational use.
 - **Example Output**
 - **FAQ**
 
-یعنی در حدی که ریپوی GitHub تو خیلی شکیل‌تر دیده شود.
+ÛŒØ¹Ù†ÛŒ Ø¯Ø± Ø­Ø¯ÛŒ Ú©Ù‡ Ø±ÛŒÙ¾ÙˆÛŒ GitHub ØªÙˆ Ø®ÛŒÙ„ÛŒ Ø´Ú©ÛŒÙ„â€ŒØªØ± Ø¯ÛŒØ¯Ù‡ Ø´ÙˆØ¯.
 
-اگر خواستی، در پیام بعدی من برات **نسخه نهایی و خیلی حرفه‌ای README** را می‌نویسم که فقط کپی‌پیست کنی داخل `README.md`.
+Ø§Ú¯Ø± Ø®ÙˆØ§Ø³ØªÛŒØŒ Ø¯Ø± Ù¾ÛŒØ§Ù… Ø¨Ø¹Ø¯ÛŒ Ù…Ù† Ø¨Ø±Ø§Øª **Ù†Ø³Ø®Ù‡ Ù†Ù‡Ø§ÛŒÛŒ Ùˆ Ø®ÛŒÙ„ÛŒ Ø­Ø±ÙÙ‡â€ŒØ§ÛŒ README** Ø±Ø§ Ù…ÛŒâ€ŒÙ†ÙˆÛŒØ³Ù… Ú©Ù‡ ÙÙ‚Ø· Ú©Ù¾ÛŒâ€ŒÙ¾ÛŒØ³Øª Ú©Ù†ÛŒ Ø¯Ø§Ø®Ù„ `README.md`.
+A clean TypeScript repository for learning foundational Data Structures, Algorithms, and Big O Analysis.
+## Clone and run
+npm run start
+## Run inside VS Code terminal
+Open the project in VS Code, then use the built-in Terminal and run:
+## Run a specific file with ts-node
+You can also run individual examples or algorithms directly:
+npx ts-node src/algorithms/linear-search.ts
+npx ts-node src/algorithms/two-sum.ts
+npx ts-node src/examples/big-o-simplification.ts
+## Build
+npm run build
+## Topics included
+- Array read, insert, delete, set
+- Ordered arrays
+- Big O examples
+- Big O simplification rules
+- Array intersection with break optimization
+- Two Sum
+- containsX with early return
+- Average of even numbers
+- Two-letter word builder
+- Three-letter word builder
+- Array sample
