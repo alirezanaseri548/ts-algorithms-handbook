@@ -1,1 +1,1 @@
-export { arraySample } from "../algorithms/array-sample";
+export { arraySample } from "../algorithms/array-sample.js";

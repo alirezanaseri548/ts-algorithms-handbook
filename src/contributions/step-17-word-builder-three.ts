@@ -1,1 +1,1 @@
-export { wordBuilderThree } from "../algorithms/word-builder-three";
+export { wordBuilderThree } from "../algorithms/word-builder-three.js";
