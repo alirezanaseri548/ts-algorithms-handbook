@@ -1,4 +1,4 @@
-export function arraySample<T>(items: T[]): [T, T, T] | null {
+﻿export function arraySample<T>(items: T[]): [T, T, T] | null {
   if (items.length < 3) {
     return null;
   }

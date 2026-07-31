@@ -1,4 +1,4 @@
-export function averageOfEvenNumbers(numbers: number[]): number | null {
+﻿export function averageOfEvenNumbers(numbers: number[]): number | null {
   let sum = 0;
   let evenCount = 0;
 

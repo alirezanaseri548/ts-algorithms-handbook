@@ -1,4 +1,4 @@
-﻿export function insertionSort(items: number[]): number[] {
+export function insertionSort(items: number[]): number[] {
   const result = [...items];
 
   for (let currentIndex = 1; currentIndex < result.length; currentIndex++) {
