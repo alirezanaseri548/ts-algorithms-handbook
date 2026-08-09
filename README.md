@@ -312,3 +312,29 @@ npm run build
 
 Implementations are located in `src/algorithms`.
 Educational notes are located in `src/contributions`.
+
+- [Step 24: Recursion](./src/contributions/step-24-recursion-notes.md)
+  - `src/algorithms/factorial.ts`
+  - `src/contributions/step-24-recursion-factorial.ts`
+
+- [Step 25: Dynamic Programming](./src/contributions/step-25-dynamic-programming-notes.md)
+  - `src/algorithms/fibonacci-memo.ts`
+  - `src/contributions/step-25-dynamic-programming-fibonacci.ts`
+
+- [Step 26: Graph DFS](./src/contributions/step-26-graph-dfs-notes.md)
+  - `src/algorithms/graph-traversal.ts`
+  - `src/contributions/step-26-graph-dfs.ts`
+- [Step 27: Graph BFS](./src/contributions/step-27-graph-bfs-notes.md)
+  - `src/algorithms/graph-traversal.ts`
+  - `src/contributions/step-27-graph-bfs.ts`
+
+- [Step 28: Singly Linked List](./src/contributions/step-28-singly-linked-list-notes.md)
+  - `src/data-structures/singly-linked-list.ts`
+  - `src/contributions/step-28-singly-linked-list.ts`
+
+- [Step 29: Merge Sort](./src/contributions/step-29-merge-sort-notes.md)
+  - `src/algorithms/merge-sort.ts`
+  - `src/contributions/step-29-merge-sort.ts`
+- [Step 30: Quick Sort](./src/contributions/step-30-quick-sort-notes.md)
+  - `src/algorithms/quick-sort.ts`
+  - `src/contributions/step-30-quick-sort.ts`

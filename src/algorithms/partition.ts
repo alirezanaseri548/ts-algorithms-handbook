@@ -6,32 +6,39 @@
   const pivot = values[high];
 
   if (pivot === undefined) {
-    throw new RangeError("high must point to an existing array element");
+    throw new Error("Partition range is invalid.");
   }
 
   let smallerIndex = low;
 
-  for (let currentIndex = low; currentIndex < high; currentIndex += 1) {
+  for (let currentIndex = low; currentIndex < high; currentIndex++) {
     const currentValue = values[currentIndex];
 
     if (currentValue === undefined) {
-      throw new RangeError("Invalid partition boundaries");
+      throw new Error("Partition range contains an invalid index.");
     }
 
     if (currentValue < pivot) {
-      [values[smallerIndex], values[currentIndex]] = [
-        values[currentIndex],
-        values[smallerIndex],
-      ];
+      const smallerValue = values[smallerIndex];
 
-      smallerIndex += 1;
+      if (smallerValue === undefined) {
+        throw new Error("Partition range contains an invalid index.");
+      }
+
+      values[smallerIndex] = currentValue;
+      values[currentIndex] = smallerValue;
+      smallerIndex++;
     }
   }
 
-  [values[smallerIndex], values[high]] = [
-    values[high],
-    values[smallerIndex],
-  ];
+  const smallerValue = values[smallerIndex];
+
+  if (smallerValue === undefined) {
+    throw new Error("Partition range contains an invalid index.");
+  }
+
+  values[smallerIndex] = pivot;
+  values[high] = smallerValue;
 
   return smallerIndex;
 }

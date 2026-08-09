@@ -1,26 +1,28 @@
-﻿import { partition } from "./partition.js";
-
-function quickSortInPlace(
-  values: number[],
-  low: number,
-  high: number,
-): void {
-  if (low >= high) {
-    return;
+export function quickSort(numbers: number[]): number[] {
+  if (numbers.length <= 1) {
+    return [...numbers];
   }
 
-  const pivotIndex = partition(values, low, high);
-
-  quickSortInPlace(values, low, pivotIndex - 1);
-  quickSortInPlace(values, pivotIndex + 1, high);
-}
-
-export function quickSort(values: number[]): number[] {
-  const result = [...values];
-
-  if (result.length > 1) {
-    quickSortInPlace(result, 0, result.length - 1);
+  const pivot = numbers[numbers.length - 1];
+  if (pivot === undefined) {
+    return [];
   }
 
-  return result;
+  const left: number[] = [];
+  const right: number[] = [];
+
+  for (let i = 0; i < numbers.length - 1; i++) {
+    const value = numbers[i];
+    if (value === undefined) {
+      continue;
+    }
+
+    if (value < pivot) {
+      left.push(value);
+    } else {
+      right.push(value);
+    }
+  }
+
+  return [...quickSort(left), pivot, ...quickSort(right)];
 }

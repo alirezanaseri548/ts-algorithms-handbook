@@ -34,3 +34,39 @@ printBigOSimplificationExamples();
 console.log("Quicksort:", quickSort([5, 2, 8, 1, 9]));
 console.log("Fibonacci memoized:", fibonacciMemoized(10));
 console.log("Fibonacci tabulated:", fibonacciTabulated(10));
+
+import { factorial } from "./algorithms/factorial.js";
+
+console.log("Step 24 - factorial(5):", factorial(5));
+
+import { fibonacciMemo } from "./algorithms/fibonacci-memo.js";
+
+console.log("Step 25 - fibonacciMemo(10):", fibonacciMemo(10));
+
+import { breadthFirstSearch, depthFirstSearch, type Graph } from "./algorithms/graph-traversal.js";
+
+const sampleGraph: Graph = new Map([
+  ["A", ["B", "C"]],
+  ["B", ["D"]],
+  ["C", ["E"]],
+  ["D", []],
+  ["E", []],
+]);
+
+console.log("Step 26 - DFS:", depthFirstSearch(sampleGraph, "A"));
+console.log("Step 27 - BFS:", breadthFirstSearch(sampleGraph, "A"));
+
+import { SinglyLinkedList } from "./data-structures/singly-linked-list.js";
+
+const linkedList = new SinglyLinkedList<number>();
+linkedList.append(10);
+linkedList.append(20);
+linkedList.append(30);
+console.log("Step 28 - linked list:", linkedList.toArray());
+
+import { mergeSort } from "./algorithms/merge-sort.js";
+
+
+console.log("Step 29 - merge sort:", mergeSort([8, 3, 5, 1, 9]));
+console.log("Step 30 - quick sort:", quickSort([8, 3, 5, 1, 9]));
+
