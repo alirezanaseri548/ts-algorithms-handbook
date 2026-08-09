@@ -299,3 +299,16 @@ npm run build
 - Two-letter word builder
 - Three-letter word builder
 - Array sample
+
+## Steps 24-30
+
+- Step 24: Recursion fundamentals
+- Step 25: Divide and Conquer
+- Step 26: Partitioning
+- Step 27: Recursive Quicksort
+- Step 28: Quicksort complexity
+- Step 29: Memoization
+- Step 30: Tabulation
+
+Implementations are located in `src/algorithms`.
+Educational notes are located in `src/contributions`.

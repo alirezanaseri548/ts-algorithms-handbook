@@ -1,3 +1,7 @@
+﻿import { fibonacciMemoized } from "./algorithms/fibonacci-memoized.js";
+import { fibonacciTabulated } from "./algorithms/fibonacci-tabulated.js";
+import { quickSort } from "./algorithms/quick-sort.js";
+
 import { linearSearch } from "./algorithms/linear-search.js";
 import { binarySearch } from "./algorithms/binary-search.js";
 import { bubbleSort } from "./algorithms/bubble-sort.js";
@@ -26,3 +30,7 @@ console.log(
 );
 
 printBigOSimplificationExamples();
+
+console.log("Quicksort:", quickSort([5, 2, 8, 1, 9]));
+console.log("Fibonacci memoized:", fibonacciMemoized(10));
+console.log("Fibonacci tabulated:", fibonacciTabulated(10));
