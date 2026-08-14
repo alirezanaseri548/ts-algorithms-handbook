@@ -61,3 +61,4 @@
 ## Step 33 - Added singly linked list insertAtIndex operation
 ## Step 34 - Added singly linked list deleteAtIndex operation
 ## Step 35 - Added linked list vs array comparison notes
+## Step 36 - Added linked list summary demo
