@@ -60,6 +60,39 @@ export class SinglyLinkedList<T> {
     return -1
   }
 
+  insertAtIndex(index: number, value: T): void {
+    const node = new ListNode(value)
+
+    if (index <= 0 || this.head === null) {
+      node.next = this.head
+      this.head = node
+
+      if (this.tail === null) {
+        this.tail = node
+      }
+
+      this.size += 1
+      return
+    }
+
+    let previous = this.head
+    let currentIndex = 0
+
+    while (previous.next !== null && currentIndex < index - 1) {
+      previous = previous.next
+      currentIndex += 1
+    }
+
+    node.next = previous.next
+    previous.next = node
+
+    if (node.next === null) {
+      this.tail = node
+    }
+
+    this.size += 1
+  }
+
   length(): number {
     return this.size
   }

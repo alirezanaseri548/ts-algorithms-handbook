@@ -58,3 +58,4 @@
 - Practiced TypeScript strict mode with noUncheckedIndexedAccess and non-null assertions.
 ## Step 31 - Added singly linked list read operation
 ## Step 32 - Added singly linked list indexOf operation
+## Step 33 - Added singly linked list insertAtIndex operation
