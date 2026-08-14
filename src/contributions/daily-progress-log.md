@@ -59,3 +59,4 @@
 ## Step 31 - Added singly linked list read operation
 ## Step 32 - Added singly linked list indexOf operation
 ## Step 33 - Added singly linked list insertAtIndex operation
+## Step 34 - Added singly linked list deleteAtIndex operation

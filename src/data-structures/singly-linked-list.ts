@@ -93,6 +93,45 @@ export class SinglyLinkedList<T> {
     this.size += 1
   }
 
+  deleteAtIndex(index: number): T | null {
+    if (this.head === null || index < 0 || index >= this.size) {
+      return null
+    }
+
+    if (index === 0) {
+      const deleted = this.head.value
+      this.head = this.head.next
+      this.size -= 1
+
+      if (this.head === null) {
+        this.tail = null
+      }
+
+      return deleted
+    }
+
+    let previous = this.head
+    let currentIndex = 0
+
+    while (previous.next !== null && currentIndex < index - 1) {
+      previous = previous.next
+      currentIndex += 1
+    }
+
+    const target = previous.next
+    if (target === null) {
+      return null
+    }
+
+    previous.next = target.next
+    if (previous.next === null) {
+      this.tail = previous
+    }
+
+    this.size -= 1
+    return target.value
+  }
+
   length(): number {
     return this.size
   }

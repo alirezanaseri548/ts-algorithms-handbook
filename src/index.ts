@@ -18,3 +18,4 @@ console.log("Step 30 - quick sort:", quickSort([8, 3, 5, 1, 9]));
 import "./contributions/step-31-singly-linked-list-read.js";
 import "./contributions/step-32-singly-linked-list-index-of.js";
 import "./contributions/step-33-singly-linked-list-insert-at-index.js";
+import "./contributions/step-34-singly-linked-list-delete-at-index.js";
