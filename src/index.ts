@@ -16,3 +16,4 @@ console.log("Step 29 - merge sort:", mergeSort([8, 3, 5, 1, 9]));
 console.log("Step 30 - quick sort:", quickSort([8, 3, 5, 1, 9]));
 
 import "./contributions/step-31-singly-linked-list-read.js";
+import "./contributions/step-32-singly-linked-list-index-of.js";

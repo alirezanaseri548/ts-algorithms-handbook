@@ -44,6 +44,22 @@ export class SinglyLinkedList<T> {
     return null
   }
 
+  indexOf(value: T): number {
+    let current = this.head
+    let currentIndex = 0
+
+    while (current !== null) {
+      if (current.value === value) {
+        return currentIndex
+      }
+
+      current = current.next
+      currentIndex += 1
+    }
+
+    return -1
+  }
+
   length(): number {
     return this.size
   }

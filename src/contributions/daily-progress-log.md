@@ -57,3 +57,4 @@
 - Added Insertion Sort skeleton, shifting mechanics, complete implementation, and complexity analysis.
 - Practiced TypeScript strict mode with noUncheckedIndexedAccess and non-null assertions.
 ## Step 31 - Added singly linked list read operation
+## Step 32 - Added singly linked list indexOf operation
