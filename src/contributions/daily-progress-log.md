@@ -67,3 +67,4 @@
 ## Step 39 - Added LinkedListQueue using Doubly Linked List.
 ## Step 40 - Added Doubly Linked List efficiency notes.
 ## Step 41 - Added Binary Search Tree base insert and search.
+## Step 43 - Fixed BST and added Deletion logic.
