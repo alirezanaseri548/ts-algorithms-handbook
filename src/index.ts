@@ -19,4 +19,5 @@ import "./contributions/step-31-singly-linked-list-read.js";
 import "./contributions/step-32-singly-linked-list-index-of.js";
 import "./contributions/step-33-singly-linked-list-insert-at-index.js";
 import "./contributions/step-34-singly-linked-list-delete-at-index.js";
-import "./contributions/step-36-singly-linked-list-summary.js";
+import "./contributions/step-36-singly-linked-list-summary.js";import "./contributions/step-37-doubly-linked-list-base.js";
+import "./contributions/step-38-doubly-linked-list-removal.js";

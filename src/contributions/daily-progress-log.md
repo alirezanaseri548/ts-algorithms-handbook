@@ -62,3 +62,5 @@
 ## Step 34 - Added singly linked list deleteAtIndex operation
 ## Step 35 - Added linked list vs array comparison notes
 ## Step 36 - Added linked list summary demo
+## Step 37 - Added Doubly Linked List base implementation.
+## Step 38 - Added O(1) front and back removal to Doubly Linked List.
