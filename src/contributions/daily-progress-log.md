@@ -69,3 +69,4 @@
 ## Step 41 - Added Binary Search Tree base insert and search.
 ## Step 43 - Fixed BST and added Deletion logic.
 ## Step 45 & 46 - Implemented Max-Heap with SiftUp and SiftDown (Strict Checks).
+## Step 47 - Implemented Priority Queue using Heap.
