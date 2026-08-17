@@ -70,3 +70,4 @@
 ## Step 43 - Fixed BST and added Deletion logic.
 ## Step 45 & 46 - Implemented Max-Heap with SiftUp and SiftDown (Strict Checks).
 ## Step 47 - Implemented Priority Queue using Heap.
+## Step 48 - Added Heap vs BST summary.
