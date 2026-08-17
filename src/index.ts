@@ -22,3 +22,4 @@ import "./contributions/step-34-singly-linked-list-delete-at-index.js";
 import "./contributions/step-36-singly-linked-list-summary.js";import "./contributions/step-37-doubly-linked-list-base.js";
 import "./contributions/step-38-doubly-linked-list-removal.js";
 import "./contributions/step-39-linked-list-queue.js";
+import "./contributions/step-41-binary-search-tree-base.js";

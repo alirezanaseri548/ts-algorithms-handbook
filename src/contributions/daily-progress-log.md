@@ -66,3 +66,4 @@
 ## Step 38 - Added O(1) front and back removal to Doubly Linked List.
 ## Step 39 - Added LinkedListQueue using Doubly Linked List.
 ## Step 40 - Added Doubly Linked List efficiency notes.
+## Step 41 - Added Binary Search Tree base insert and search.
