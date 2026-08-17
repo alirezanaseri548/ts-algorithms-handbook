@@ -65,3 +65,4 @@
 ## Step 37 - Added Doubly Linked List base implementation.
 ## Step 38 - Added O(1) front and back removal to Doubly Linked List.
 ## Step 39 - Added LinkedListQueue using Doubly Linked List.
+## Step 40 - Added Doubly Linked List efficiency notes.
