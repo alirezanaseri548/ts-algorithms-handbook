@@ -1,4 +1,4 @@
-import { fibonacciMemoized } from "./algorithms/fibonacci-memoized.js";
+﻿import { fibonacciMemoized } from "./algorithms/fibonacci-memoized.js";
 import { fibonacciTabulated } from "./algorithms/fibonacci-tabulated.js";
 import { mergeSort } from "./algorithms/merge-sort.js";
 import { quickSort } from "./algorithms/quick-sort.js";
@@ -23,3 +23,10 @@ import "./contributions/step-36-singly-linked-list-summary.js";import "./contrib
 import "./contributions/step-38-doubly-linked-list-removal.js";
 import "./contributions/step-39-linked-list-queue.js";
 import "./contributions/step-41-binary-search-tree-base.js";
+// Steps 49-53: advanced algorithms and data structures
+import "./contributions/step-49-heap-sort.js";
+import "./contributions/step-50-trie-base.js";
+import "./contributions/step-51-trie-autocomplete.js";
+import "./contributions/step-52-weighted-graph.js";
+import "./contributions/step-53-dijkstra.js";
+
