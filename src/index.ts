@@ -31,3 +31,5 @@ import "./contributions/step-52-weighted-graph.js";
 import "./contributions/step-53-dijkstra.js";
 
 import "./contributions/step-55-bellman-ford.js";
+import { reconstructPath } from "./algorithms/reconstruct-path.js";
+import "./contributions/step-56-shortest-path-reconstruction.js";

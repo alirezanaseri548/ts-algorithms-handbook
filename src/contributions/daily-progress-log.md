@@ -76,3 +76,8 @@
 
 Implemented single-source shortest paths with negative-edge support and reachable negative-cycle detection.
 
+
+## Step 56 — Shortest-path reconstruction
+
+Added safe reconstruction of an explicit source-to-target path from a predecessor array.
+
