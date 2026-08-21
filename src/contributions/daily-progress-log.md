@@ -86,3 +86,8 @@ Added safe reconstruction of an explicit source-to-target path from a predecesso
 
 Implemented Kahn's algorithm for topological sorting of DAGs, with cycle detection.
 
+
+## Step 58 — Disjoint set union
+
+Implemented a Disjoint Set Union structure with path compression and union by rank.
+
