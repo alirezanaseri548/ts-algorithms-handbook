@@ -96,3 +96,8 @@ Implemented a Disjoint Set Union structure with path compression and union by ra
 
 Implemented Kruskal's algorithm using Disjoint Set Union to find a minimum spanning tree or spanning forest.
 
+
+## Step 60 — Shortest paths versus minimum spanning trees
+
+Compared shortest-path optimization with minimum-spanning-tree construction using Bellman-Ford and Kruskal.
+
