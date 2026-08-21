@@ -81,3 +81,8 @@ Implemented single-source shortest paths with negative-edge support and reachabl
 
 Added safe reconstruction of an explicit source-to-target path from a predecessor array.
 
+
+## Step 57 — Topological sort
+
+Implemented Kahn's algorithm for topological sorting of DAGs, with cycle detection.
+
