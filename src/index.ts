@@ -30,3 +30,4 @@ import "./contributions/step-51-trie-autocomplete.js";
 import "./contributions/step-52-weighted-graph.js";
 import "./contributions/step-53-dijkstra.js";
 
+import "./contributions/step-55-bellman-ford.js";
