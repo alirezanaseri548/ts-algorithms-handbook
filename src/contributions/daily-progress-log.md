@@ -91,3 +91,8 @@ Implemented Kahn's algorithm for topological sorting of DAGs, with cycle detecti
 
 Implemented a Disjoint Set Union structure with path compression and union by rank.
 
+
+## Step 59 — Kruskal's algorithm for MST
+
+Implemented Kruskal's algorithm using Disjoint Set Union to find a minimum spanning tree or spanning forest.
+

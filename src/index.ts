@@ -36,3 +36,4 @@ import "./contributions/step-56-shortest-path-reconstruction.js";
 import "./contributions/step-57-topological-sort.js";
 import { DisjointSet } from "./data-structures/disjoint-set.js";
 import "./contributions/step-58-disjoint-set-union.js";
+import "./contributions/step-59-kruskal-mst.js";
