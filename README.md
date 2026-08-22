@@ -17,13 +17,15 @@ Each contribution focuses on one concept: array operations, searching, sorting, 
 ---
 
 ## Project Structure
+
 ```text
 src/
   algorithms/        searching, sorting, graph and dynamic programming implementations
   data-structures/   array operations, ordered array, linked list, disjoint set
   contributions/     step-by-step learning files and notes
   examples/          small runnable demos
-  index.ts           entry point used by `npm start`
+  index.ts           entry point used by npm start
+```
 
 Compiled output is written to `dist/` and is not committed.
 
@@ -35,27 +37,30 @@ Compiled output is written to `dist/` and is not committed.
 - npm
 - A TypeScript-aware editor such as **VS Code**
 
-bash
+```bash
 node -v
 npm -v
+```
 
 ---
 
 ## Installation
 
-bash
+```bash
 git clone https://github.com/alirezanaseri548/ts-algorithms-handbook.git
 cd ts-algorithms-handbook
 npm install
+```
 
 ---
 
 ## Scripts
 
-bash
+```bash
 npm run typecheck   # type-check only, no emitted files
 npm run build       # compile src/ into dist/
 npm start           # run dist/index.js
+```
 
 ---
 
@@ -63,35 +68,39 @@ npm start           # run dist/index.js
 
 This is an ES module project compiled with `nodenext`, so the reliable flow is compile then run:
 
-bash
+```bash
 npm run build
 npm start
+```
 
 To run a single compiled file:
 
-bash
+```bash
 node dist/examples/reconstruct-path-demo.js
-node dist/contributions/step-19-benchmark.js
+node dist/contributions/step-49-heap-sort.js
+```
 
-`ts-node` is not part of the dependencies. If you prefer executing TypeScript directly,
-use a loader with ESM support:
+`ts-node` is not part of the dependencies. If you prefer executing TypeScript
+directly, use a loader with ESM support:
 
-bash
+```bash
 npx tsx src/index.ts
+```
 
 ---
 
 ## How to Run in VS Code
 
 1. Open the project folder in VS Code
-2. Open the integrated terminal (Ctrl + backtick)
+2. Open the integrated terminal
 3. Confirm you are in the project root
 4. Install dependencies with `npm install`
 5. Build and run:
 
-bash
+```bash
 npm run build
 npm start
+```
 
 ---
 
@@ -115,7 +124,8 @@ npm start
 - Shortest paths: Dijkstra, Bellman-Ford and path reconstruction
 - Minimum spanning tree: Kruskal with disjoint set
 - Topological sort
-- Singly linked list and an undo stack for a text editor
+- Trie and autocomplete
+- Singly linked list, doubly linked list and an undo stack for a text editor
 
 ---
 
@@ -171,10 +181,11 @@ When adding a new learning step:
 3. Review the staged changes with `git diff --cached`
 4. Commit with a conventional message, then push
 
-bash
+```bash
 git add <files>
 git commit -m "feat: add new algorithm step"
 git push origin main
+```
 
 ---
 
