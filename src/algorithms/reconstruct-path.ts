@@ -33,11 +33,16 @@ export function reconstructPath(
 
         const predecessor: number | null | undefined = previous[current];
 
-        if (predecessor !== null && (
-            !Number.isInteger(predecessor) ||
-            predecessor < 0 ||
-            predecessor >= previous.length
-        )) {
+        if (predecessor === undefined) {
+            throw new Error("Invalid predecessor chain: missing entry.");
+        }
+
+        if (
+            predecessor !== null &&
+            (!Number.isInteger(predecessor) ||
+                predecessor < 0 ||
+                predecessor >= previous.length)
+        ) {
             throw new Error("Invalid predecessor chain.");
         }
 

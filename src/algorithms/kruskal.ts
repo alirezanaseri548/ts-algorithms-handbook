@@ -1,4 +1,4 @@
-﻿import { DisjointSet } from "../data-structures/disjoint-set.js";
+import { DisjointSet } from "../data-structures/disjoint-set.js";
 
 export interface Edge {
     from: number;

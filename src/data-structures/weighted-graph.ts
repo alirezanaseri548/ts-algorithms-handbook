@@ -1,4 +1,4 @@
-﻿export interface WeightedEdge {
+export interface WeightedEdge {
   readonly vertex: string;
   readonly weight: number;
 }

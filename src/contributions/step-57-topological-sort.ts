@@ -1,4 +1,4 @@
-﻿import { topologicalSort } from "../algorithms/topological-sort.js";
+import { topologicalSort } from "../algorithms/topological-sort.js";
 
 const graph = [
     [1, 2],

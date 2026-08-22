@@ -1,4 +1,4 @@
-﻿export class Stack<T> {
+export class Stack<T> {
   private data: T[] = [];
 
   push(element: T): void {

@@ -1,4 +1,4 @@
-﻿export function step07BinarySearch(items: number[], target: number): number {
+export function step07BinarySearch(items: number[], target: number): number {
   let left = 0;
   let right = items.length - 1;
 

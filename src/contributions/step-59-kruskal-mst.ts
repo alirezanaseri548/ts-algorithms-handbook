@@ -1,4 +1,4 @@
-﻿import { kruskal, type Edge } from "../algorithms/kruskal.js";
+import { kruskal, type Edge } from "../algorithms/kruskal.js";
 
 const edges: Edge[] = [
     { from: 0, to: 1, weight: 10 },

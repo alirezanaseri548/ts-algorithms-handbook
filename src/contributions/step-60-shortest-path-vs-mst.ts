@@ -1,4 +1,4 @@
-﻿import { bellmanFord } from "../algorithms/bellman-ford.js";
+import { bellmanFord } from "../algorithms/bellman-ford.js";
 import { kruskal, type Edge } from "../algorithms/kruskal.js";
 
 const directedEdges = [

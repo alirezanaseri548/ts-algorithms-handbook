@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Sorts numbers in ascending order using an in-place max heap.
  *
  * Time complexity:

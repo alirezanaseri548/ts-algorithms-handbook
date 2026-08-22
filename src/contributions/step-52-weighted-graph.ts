@@ -1,4 +1,4 @@
-﻿import { WeightedGraph } from "../data-structures/weighted-graph.js";
+import { WeightedGraph } from "../data-structures/weighted-graph.js";
 
 const weightedGraph = new WeightedGraph();
 

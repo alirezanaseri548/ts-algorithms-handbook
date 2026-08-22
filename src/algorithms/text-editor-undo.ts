@@ -1,4 +1,4 @@
-﻿import { Stack } from "../data-structures/stack.js";
+import { Stack } from "../data-structures/stack.js";
 
 export class TextEditorUndo {
   private undoStack: Stack<string>;

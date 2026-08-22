@@ -1,4 +1,4 @@
-﻿export function wordBuilderTwo(characters: string[]): string[] {
+export function wordBuilderTwo(characters: string[]): string[] {
   const collection: string[] = [];
 
   for (let i = 0; i < characters.length; i++) {

@@ -1,4 +1,4 @@
-﻿import { fibonacciMemoized } from "./algorithms/fibonacci-memoized.js";
+import { fibonacciMemoized } from "./algorithms/fibonacci-memoized.js";
 import { fibonacciTabulated } from "./algorithms/fibonacci-tabulated.js";
 import { mergeSort } from "./algorithms/merge-sort.js";
 import { quickSort } from "./algorithms/quick-sort.js";

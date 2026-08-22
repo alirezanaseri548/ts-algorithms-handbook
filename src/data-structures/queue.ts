@@ -1,4 +1,4 @@
-﻿export class Queue<T> {
+export class Queue<T> {
   private data: T[] = [];
 
   enqueue(element: T): void {

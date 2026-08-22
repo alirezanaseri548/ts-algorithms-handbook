@@ -1,4 +1,4 @@
-﻿export function insertOrdered(items: number[], value: number): number[] {
+export function insertOrdered(items: number[], value: number): number[] {
   const result = [...items];
   let targetIndex = 0;
 

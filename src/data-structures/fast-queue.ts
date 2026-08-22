@@ -1,4 +1,4 @@
-﻿export class FastQueue<T> {
+export class FastQueue<T> {
   private data: T[] = [];
   private head = 0;
 

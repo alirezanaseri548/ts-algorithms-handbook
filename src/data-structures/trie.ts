@@ -1,4 +1,4 @@
-﻿class TrieNode {
+class TrieNode {
   readonly children = new Map<string, TrieNode>();
   isEndOfWord = false;
 }

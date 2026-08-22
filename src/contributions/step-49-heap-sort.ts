@@ -1,4 +1,4 @@
-﻿import { heapSort } from "../algorithms/heap-sort.js";
+import { heapSort } from "../algorithms/heap-sort.js";
 
 const heapSortInput = [12, 11, 13, 5, 6, 7];
 

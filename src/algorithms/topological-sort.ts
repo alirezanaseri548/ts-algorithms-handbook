@@ -1,4 +1,4 @@
-﻿export function topologicalSort(adjacencyList: number[][]): number[] {
+export function topologicalSort(adjacencyList: number[][]): number[] {
     const vertexCount = adjacencyList.length;
     const indegree = Array<number>(vertexCount).fill(0);
 

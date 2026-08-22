@@ -1,4 +1,4 @@
-﻿import { bellmanFord } from "../algorithms/bellman-ford.js";
+import { bellmanFord } from "../algorithms/bellman-ford.js";
 import { reconstructPath } from "../algorithms/reconstruct-path.js";
 
 const edges = [

@@ -1,4 +1,4 @@
-﻿import {
+import {
   dijkstra,
   reconstructShortestPath,
 } from "../algorithms/dijkstra.js";

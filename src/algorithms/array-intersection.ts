@@ -1,4 +1,4 @@
-﻿export function intersectionWithoutBreak(
+export function intersectionWithoutBreak(
   firstArray: number[],
   secondArray: number[]
 ): number[] {

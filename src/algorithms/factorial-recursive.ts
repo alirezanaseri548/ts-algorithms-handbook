@@ -1,4 +1,4 @@
-﻿export function factorialRecursive(n: number): number {
+export function factorialRecursive(n: number): number {
   if (!Number.isInteger(n) || n < 0) {
     throw new RangeError("n must be a non-negative integer");
   }

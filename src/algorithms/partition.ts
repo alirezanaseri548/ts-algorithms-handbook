@@ -1,4 +1,4 @@
-﻿export function partition(
+export function partition(
   values: number[],
   low: number,
   high: number,

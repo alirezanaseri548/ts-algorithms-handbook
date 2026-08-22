@@ -1,4 +1,4 @@
-﻿export function step09BubbleSort(items: number[]): number[] {
+export function step09BubbleSort(items: number[]): number[] {
   const result = [...items];
 
   for (let i = 0; i < result.length; i++) {

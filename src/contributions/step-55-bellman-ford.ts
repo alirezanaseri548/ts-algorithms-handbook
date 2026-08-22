@@ -1,4 +1,4 @@
-﻿import { bellmanFord } from "../algorithms/bellman-ford.js";
+import { bellmanFord } from "../algorithms/bellman-ford.js";
 
 const edges = [
     { from: 0, to: 1, weight: 6 },

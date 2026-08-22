@@ -1,4 +1,4 @@
-﻿import { Trie } from "../data-structures/trie.js";
+import { Trie } from "../data-structures/trie.js";
 
 const autocompleteTrie = new Trie();
 

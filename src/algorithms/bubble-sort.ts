@@ -1,4 +1,4 @@
-﻿export function bubbleSort(items: number[]): number[] {
+export function bubbleSort(items: number[]): number[] {
   const result = [...items];
 
   let sorted = false;

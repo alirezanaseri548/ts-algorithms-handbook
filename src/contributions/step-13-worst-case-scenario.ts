@@ -1,1 +1,1 @@
-﻿export const worstCase = 'Big O always describes the worst-case scenario.';
+export const worstCase = 'Big O always describes the worst-case scenario.';

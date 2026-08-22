@@ -1,4 +1,4 @@
-﻿export type WeightedDirectedEdge = {
+export type WeightedDirectedEdge = {
     from: number;
     to: number;
     weight: number;

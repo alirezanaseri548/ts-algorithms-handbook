@@ -1,4 +1,4 @@
-﻿export class DisjointSet {
+export class DisjointSet {
     private readonly parent: number[];
     private readonly rank: number[];
 
