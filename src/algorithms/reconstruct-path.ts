@@ -1,4 +1,4 @@
-﻿export function reconstructPath(
+export function reconstructPath(
     previous: Array<number | null>,
     source: number,
     target: number,
@@ -31,7 +31,7 @@
             return path;
         }
 
-        const predecessor = previous[current];
+        const predecessor: number | null | undefined = previous[current];
 
         if (predecessor !== null && (
             !Number.isInteger(predecessor) ||
