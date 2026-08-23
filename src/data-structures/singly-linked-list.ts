@@ -1,150 +1,99 @@
-class ListNode<T> {
-  constructor(
-    public value: T,
-    public next: ListNode<T> | null = null
-  ) {}
+export class ListNode<T> {
+  next: ListNode<T> | null = null;
+  constructor(public value: T) {}
 }
 
+/**
+ * لیست پیوندی یک‌طرفه با نگهداری head و tail
+ * push/unshift/shift => O(1) , find/removeAt => O(n)
+ */
 export class SinglyLinkedList<T> {
-  private head: ListNode<T> | null = null
-  private tail: ListNode<T> | null = null
-  private size = 0
+  private head: ListNode<T> | null = null;
+  private tail: ListNode<T> | null = null;
+  private length = 0;
 
-  append(value: T): void {
-    const node = new ListNode(value)
+  get size(): number {
+    return this.length;
+  }
 
-    if (this.head === null) {
-      this.head = node
-      this.tail = node
+  push(value: T): this {
+    const node = new ListNode(value);
+    if (this.tail === null) {
+      this.head = node;
+      this.tail = node;
     } else {
-      this.tail!.next = node
-      this.tail = node
+      this.tail.next = node;
+      this.tail = node;
     }
-
-    this.size += 1
+    this.length++;
+    return this;
   }
 
-  read(index: number): T | null {
-    if (index < 0 || index >= this.size) {
-      return null
+  unshift(value: T): this {
+    const node = new ListNode(value);
+    if (this.head === null) {
+      this.head = node;
+      this.tail = node;
+    } else {
+      node.next = this.head;
+      this.head = node;
     }
+    this.length++;
+    return this;
+  }
 
-    let current = this.head
-    let currentIndex = 0
+  shift(): T | undefined {
+    if (this.head === null) return undefined;
+    const removed = this.head;
+    this.head = removed.next;
+    if (this.head === null) this.tail = null;
+    removed.next = null;
+    this.length--;
+    return removed.value;
+  }
 
+  find(predicate: (value: T, index: number) => boolean): T | undefined {
+    let current = this.head;
+    let index = 0;
     while (current !== null) {
-      if (currentIndex === index) {
-        return current.value
-      }
-
-      current = current.next
-      currentIndex += 1
+      if (predicate(current.value, index)) return current.value;
+      current = current.next;
+      index++;
     }
-
-    return null
+    return undefined;
   }
 
-  indexOf(value: T): number {
-    let current = this.head
-    let currentIndex = 0
+  removeAt(index: number): T | undefined {
+    if (index < 0 || index >= this.length) return undefined;
+    if (index === 0) return this.shift();
 
-    while (current !== null) {
-      if (current.value === value) {
-        return currentIndex
-      }
-
-      current = current.next
-      currentIndex += 1
+    let previous = this.head as ListNode<T>;
+    for (let i = 0; i < index - 1; i++) {
+      previous = previous.next as ListNode<T>;
     }
-
-    return -1
-  }
-
-  insertAtIndex(index: number, value: T): void {
-    const node = new ListNode(value)
-
-    if (index <= 0 || this.head === null) {
-      node.next = this.head
-      this.head = node
-
-      if (this.tail === null) {
-        this.tail = node
-      }
-
-      this.size += 1
-      return
-    }
-
-    let previous = this.head
-    let currentIndex = 0
-
-    while (previous.next !== null && currentIndex < index - 1) {
-      previous = previous.next
-      currentIndex += 1
-    }
-
-    node.next = previous.next
-    previous.next = node
-
-    if (node.next === null) {
-      this.tail = node
-    }
-
-    this.size += 1
-  }
-
-  deleteAtIndex(index: number): T | null {
-    if (this.head === null || index < 0 || index >= this.size) {
-      return null
-    }
-
-    if (index === 0) {
-      const deleted = this.head.value
-      this.head = this.head.next
-      this.size -= 1
-
-      if (this.head === null) {
-        this.tail = null
-      }
-
-      return deleted
-    }
-
-    let previous = this.head
-    let currentIndex = 0
-
-    while (previous.next !== null && currentIndex < index - 1) {
-      previous = previous.next
-      currentIndex += 1
-    }
-
-    const target = previous.next
-    if (target === null) {
-      return null
-    }
-
-    previous.next = target.next
-    if (previous.next === null) {
-      this.tail = previous
-    }
-
-    this.size -= 1
-    return target.value
-  }
-
-  length(): number {
-    return this.size
+    const target = previous.next as ListNode<T>;
+    previous.next = target.next;
+    if (target === this.tail) this.tail = previous;
+    target.next = null;
+    this.length--;
+    return target.value;
   }
 
   toArray(): T[] {
-    const values: T[] = []
-    let current = this.head
-
+    const result: T[] = [];
+    let current = this.head;
     while (current !== null) {
-      values.push(current.value)
-      current = current.next
+      result.push(current.value);
+      current = current.next;
     }
+    return result;
+  }
 
-    return values
+  *[Symbol.iterator](): Iterator<T> {
+    let current = this.head;
+    while (current !== null) {
+      yield current.value;
+      current = current.next;
+    }
   }
 }
