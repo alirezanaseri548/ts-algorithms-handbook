@@ -209,3 +209,14 @@ GitHub: [@alirezanaseri548](https://github.com/alirezanaseri548)
 ## License
 
 This project is open for learning and educational use.
+
+## Data Structures
+
+| ساختار | فایل | پیچیدگی کلیدی |
+| ------ | ---- | -------------- |
+| Singly Linked List | `src/data-structures/singly-linked-list.ts` | push/unshift/shift: O(1) |
+| Doubly Linked List | `src/data-structures/doubly-linked-list.ts` | push/pop/unshift/shift: O(1) |
+| Linked List Queue  | `src/data-structures/linked-list-queue.ts`  | enqueue/dequeue/peek: O(1) |
+
+- نمونه‌ی اجرایی: `src/examples/linked-list-usage.ts`
+- نکات و خطاهای رایج: `docs/linked-list-notes.md`
