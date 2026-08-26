@@ -1,13 +1,9 @@
-export class DoublyNode<T> {
+﻿export class DoublyNode<T> {
   prev: DoublyNode<T> | null = null;
   next: DoublyNode<T> | null = null;
   constructor(public value: T) {}
 }
 
-/**
- * لیست پیوندی دوطرفه
- * push/pop/unshift/shift => O(1) , at() => O(n/2)
- */
 export class DoublyLinkedList<T> {
   private head: DoublyNode<T> | null = null;
   private tail: DoublyNode<T> | null = null;
@@ -31,15 +27,8 @@ export class DoublyLinkedList<T> {
     return this;
   }
 
-  pop(): T | undefined {
-    if (this.tail === null) return undefined;
-    const removed = this.tail;
-    this.tail = removed.prev;
-    if (this.tail === null) this.head = null;
-    else this.tail.next = null;
-    removed.prev = null;
-    this.length--;
-    return removed.value;
+  append(value: T): this {
+    return this.push(value);
   }
 
   unshift(value: T): this {
@@ -56,32 +45,61 @@ export class DoublyLinkedList<T> {
     return this;
   }
 
-  shift(): T | undefined {
-    if (this.head === null) return undefined;
-    const removed = this.head;
-    this.head = removed.next;
-    if (this.head === null) this.tail = null;
-    else this.head.prev = null;
-    removed.next = null;
-    this.length--;
-    return removed.value;
+  prepend(value: T): this {
+    return this.unshift(value);
   }
 
-  /** پیمایش از نزدیک‌ترین سر لیست */
+  pop(): T | undefined {
+    if (this.tail === null) return undefined;
+    const value = this.tail.value;
+    if (this.head === this.tail) {
+      this.head = null;
+      this.tail = null;
+    } else {
+      this.tail = this.tail.prev;
+      if (this.tail) this.tail.next = null;
+    }
+    this.length--;
+    return value;
+  }
+
+  removeFromEnd(): T | undefined {
+    return this.pop();
+  }
+
+  shift(): T | undefined {
+    if (this.head === null) return undefined;
+    const value = this.head.value;
+    if (this.head === this.tail) {
+      this.head = null;
+      this.tail = null;
+    } else {
+      this.head = this.head.next;
+      if (this.head) this.head.prev = null;
+    }
+    this.length--;
+    return value;
+  }
+
+  removeFromFront(): T | undefined {
+    return this.shift();
+  }
+
   at(index: number): T | undefined {
     if (index < 0 || index >= this.length) return undefined;
-
-    if (index <= this.length / 2) {
-      let current = this.head as DoublyNode<T>;
-      for (let i = 0; i < index; i++) current = current.next as DoublyNode<T>;
-      return current.value;
+    if (index < this.length / 2) {
+      let current = this.head;
+      for (let i = 0; i < index && current !== null; i++) {
+        current = current.next;
+      }
+      return current?.value;
+    } else {
+      let current = this.tail;
+      for (let i = this.length - 1; i > index && current !== null; i--) {
+        current = current.prev;
+      }
+      return current?.value;
     }
-
-    let current = this.tail as DoublyNode<T>;
-    for (let i = this.length - 1; i > index; i--) {
-      current = current.prev as DoublyNode<T>;
-    }
-    return current.value;
   }
 
   toArray(): T[] {
@@ -90,16 +108,6 @@ export class DoublyLinkedList<T> {
     while (current !== null) {
       result.push(current.value);
       current = current.next;
-    }
-    return result;
-  }
-
-  toArrayReversed(): T[] {
-    const result: T[] = [];
-    let current = this.tail;
-    while (current !== null) {
-      result.push(current.value);
-      current = current.prev;
     }
     return result;
   }
