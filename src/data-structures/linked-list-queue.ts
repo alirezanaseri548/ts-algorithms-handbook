@@ -1,19 +1,18 @@
-class QueueNode<T> {
+﻿class QueueNode<T> {
   next: QueueNode<T> | null = null;
   constructor(public value: T) {}
 }
 
-/**
- * صف مبتنی بر لیست پیوندی — FIFO
- * enqueue / dequeue / peek => O(1)
- * برخلاف Array.shift که O(n) است.
- */
 export class LinkedListQueue<T> {
   private front: QueueNode<T> | null = null;
   private back: QueueNode<T> | null = null;
   private length = 0;
 
   get size(): number {
+    return this.length;
+  }
+
+  peekSize(): number {
     return this.length;
   }
 
@@ -36,12 +35,11 @@ export class LinkedListQueue<T> {
 
   dequeue(): T | undefined {
     if (this.front === null) return undefined;
-    const removed = this.front;
-    this.front = removed.next;
+    const value = this.front.value;
+    this.front = this.front.next;
     if (this.front === null) this.back = null;
-    removed.next = null;
     this.length--;
-    return removed.value;
+    return value;
   }
 
   peek(): T | undefined {

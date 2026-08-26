@@ -1,29 +1,28 @@
-import {
+﻿import {
   SinglyLinkedList,
   DoublyLinkedList,
   LinkedListQueue,
-} from "../data-structures";
+} from "../data-structures/index.js";
 
-// --- Singly Linked List ---
-const list = new SinglyLinkedList<number>();
-list.push(10).push(20).push(30).unshift(5);
-console.log("singly:", list.toArray()); // [5, 10, 20, 30]
-console.log("removeAt(2):", list.removeAt(2)); // 20
-console.log("find > 9:", list.find((v) => v > 9)); // 10
-console.log("spread:", [...list]); // [5, 10, 30]
+const sll = new SinglyLinkedList<number>();
+sll.push(10).push(20).push(30);
+console.log("SLL toArray:", sll.toArray());
+console.log("SLL size:", sll.size);
 
-// --- Doubly Linked List ---
 const dll = new DoublyLinkedList<string>();
-dll.push("a").push("b").push("c").unshift("start");
-console.log("doubly:", dll.toArray()); // ["start", "a", "b", "c"]
-console.log("reversed:", dll.toArrayReversed()); // ["c", "b", "a", "start"]
-console.log("at(2):", dll.at(2)); // "b"
-console.log("pop:", dll.pop()); // "c"
+dll.push("middle");
+dll.unshift("start");
+dll.push("end");
+console.log("DLL toArray:", dll.toArray());
+console.log("DLL at(1):", dll.at(1));
+console.log("DLL shift:", dll.shift());
+console.log("DLL pop:", dll.pop());
+console.log("DLL remaining:", dll.toArray());
 
-// --- Queue ---
 const queue = new LinkedListQueue<string>();
-queue.enqueue("job-1").enqueue("job-2").enqueue("job-3");
-console.log("peek:", queue.peek()); // "job-1"
-console.log("dequeue:", queue.dequeue()); // "job-1"
-console.log("queue:", queue.toArray()); // ["job-2", "job-3"]
-console.log("size:", queue.size); // 2
+queue.enqueue("job1").enqueue("job2").enqueue("job3");
+console.log("Queue peek:", queue.peek());
+console.log("Queue dequeue:", queue.dequeue());
+console.log("Queue size:", queue.size);
+console.log("Queue isEmpty:", queue.isEmpty);
+console.log("Queue toArray:", queue.toArray());
