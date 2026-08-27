@@ -1,2 +1,0 @@
-﻿Branch: fix/complete-ds-api-resolved
-Remote: https://github.com/alirezanaseri548/ts-algorithms-handbook.git
