@@ -1,0 +1,8 @@
+﻿gh : failed to get runs: Get "https://api.github.com/repos/alirezanaseri548/ts-algorithms-handbook/actions/runs?per_pag
+e=20&exclude_pull_requests=true": net/http: TLS handshake timeout
+At line:9 char:21
++         $RunsJson = gh run list `
++                     ~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (failed to get r...ndshake timeout:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
