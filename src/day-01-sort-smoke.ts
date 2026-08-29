@@ -1,5 +1,6 @@
 ﻿import assert from "node:assert/strict";
 import { bubbleSort } from "./algorithms/bubble-sort.js";
+import { insertionSort } from "./algorithms/insertion-sort.js";
 
 type SortFunction = (items: number[]) => number[];
 
@@ -16,3 +17,4 @@ function verifySort(name: string, sort: SortFunction): void {
 }
 
 verifySort("bubbleSort", bubbleSort);
+verifySort("in sortSort", insertionSort);
