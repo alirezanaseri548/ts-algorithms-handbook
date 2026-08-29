@@ -2,6 +2,7 @@
 import { bubbleSort } from "./algorithms/bubble-sort.js";
 import { insertionSort } from "./algorithms/insertion-sort.js";
 import { selectionSort } from "./algorithms/selection-sort.js";
+import { quickSort } from "./algorithms/quick-sort.js";
 
 type SortFunction = (items: number[]) => number[];
 
@@ -20,3 +21,6 @@ function verifySort(name: string, sort: SortFunction): void {
 verifySort("bubbleSort", bubbleSort);
 verifySort("insertionSort", insertionSort);
 verifySort("selectionSort", selectionSort);
+verifySort("quickSort", quickSort);
+
+console.log("Day 01 sorting smoke tests passed.");
