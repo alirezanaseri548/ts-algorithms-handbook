@@ -5,9 +5,9 @@ import { quickSort } from "./algorithms/quick-sort.js";
 import { SinglyLinkedList } from "./data-structures/singly-linked-list.js";
 
 const linkedList = new SinglyLinkedList<number>();
-linkedList.append(10);
-linkedList.append(20);
-linkedList.append(30);
+linkedList.push(10);
+linkedList.push(20);
+linkedList.push(30);
 console.log("Step 28 - linked list:", linkedList.toArray());
 
 console.log("Step 29 - fibonacci memoized:", fibonacciMemoized(7));
