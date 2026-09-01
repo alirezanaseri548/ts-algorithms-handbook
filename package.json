@@ -7,7 +7,7 @@
         "build": "tsc",
         "typecheck": "tsc --noEmit",
         "start": "node dist/index.js",
-        "test": "npm run typecheck"
+        "test": "npm run build && node dist/tests/quickselect.test.js"
     },
     "devDependencies": {
         "@types/node": "^24.0.0",
