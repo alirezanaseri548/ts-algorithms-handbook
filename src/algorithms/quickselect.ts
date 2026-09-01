@@ -1,4 +1,4 @@
-﻿import { partition } from './partition.js';
+import { partition } from './partition.js';
 
 /**
  * Returns the value that would appear at zero-based index k
@@ -39,7 +39,11 @@ export function quickSelect(
     const pivotIndex = partition(values, left, right);
 
     if (pivotIndex === k) {
-      return values[pivotIndex];
+      const value = values[pivotIndex];
+      if (value === undefined) {
+        throw new Error("pivotIndex out of bounds");
+      }
+      return value;
     }
 
     if (k < pivotIndex) {
